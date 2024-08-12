@@ -15,7 +15,7 @@ nav {
   z-index: 20;
 }
 
-.navbarContainer{
+.navbarContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,9 +36,16 @@ nav .logo h1 span {
   text-decoration: underline;
 }
 
+nav .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 nav .right ul li {
   display: inline-block;
-  margin: 5px 5px;
+  margin: 5px 20px;
+  position: relative;
 }
 
 nav .right ul li a {
@@ -46,12 +53,48 @@ nav .right ul li a {
   text-decoration: none;
   transition: 0.4s;
   font-size: 1.3rem;
-  font-weight: bold;
 }
 
 nav .right ul li a:hover {
   color: #ffe100;
 }
+
+/* Dropdown Styles */
+nav .right ul .dropdown .dropdown-toggle::after {
+  content: " ▼";
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+nav .right ul .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #282828;
+  padding: 10px;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  width: 200px;
+}
+
+nav .right ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav .right ul .dropdown .dropdown-menu li {
+  display: block;
+  margin: 5px 0;
+}
+
+nav .right ul .dropdown .dropdown-menu li a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+nav .right ul .dropdown .dropdown-menu li a:hover {
+  color: #ffe100;
+}
+
 
 section {
   margin-top: 0;
