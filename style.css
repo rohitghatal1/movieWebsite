@@ -994,8 +994,13 @@ footer {
 }
 
 .footerSection {
+  width: 33%;
   flex: 1;
   margin: 0 1rem;
+}
+.footerSection .emailPart{
+  text-decoration: none;
+  color: #fff;
 }
 
 .footerSection h3 {
@@ -1037,7 +1042,7 @@ footer {
 }
 
 .footerBottom .end {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .footerBottom .gototopbtn {
