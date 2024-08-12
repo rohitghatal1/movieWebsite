@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <nav id="top">
+        <div class="logo">
+            <h1>Movies<span>Hub</span></h1>
+        </div>
+    
+        <div class="right">
+            <ul>
+                <li><a href="indexx.html">Home</a></li>
+                <li><a href="#popular">Popular Movies</a></li>
+                <li><a href="#upcoming">Upcoming Movies</a></li>
+                <li><a href="#tvShows">Tv Show</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#newLetter">Newsletter</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+    
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="image">
+                        <div class="black">
+                            <h1>Death on the Nile</h1>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic assumenda consequuntur commodi qui omnis veniam eveniet ipsam voluptates earum quod
+                                itaque cupiditate voluptatum tenetur repellendus facilis similique ab, provident ullam?
+                            </p>
+                            <div class="genre">
+                                <a href="#" class="category">Action</a>
+                                <a href="#" class="category">Drama</a>
+                                <a href="#" class="category"><span>4K</span></a>
+                            </div>
+                            <div class="watch">
+                                <i class="fa-solid fa-play" onclick="playSwiperVideo()"></i>
+                                <p>Watch the trailer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="here.jpg" alt="Death on the Nile">
+                </div>
+                <div class="MovieFrame" id="swipervideo">
+                    <span class="closeMoviebtn" id="swipervideo1" onclick="closeswiperVideo()">&times;</span>
+                    <video src="#" controls></video>
+                </div>
+                
+                <!-- Remaining slides here -->
+                
+            </div>
+    
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+
+    <div class="second" id="popular">
+
+        <div class="latest">
+
+            <h1>Popular Movies</h1>
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Gajaman</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2023</p>
+                            </div>
+                            <p class="category">Animation/Comedy</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>9.3</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>120 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <span onclick="playmovie1()"><i class="fa-solid fa-play"></i></span>
+                        </div>
+                    </div>
+                    <img src="gajaman.jpg" alt="Gajaman">
+
+                    <div class="MovieFrame" id="video1">
+                        <span class="closeMoviebtn" id="closemovie1" onclick="closeMovie1()">&times;</span>
+                        <video src="#" controls></video>
+                    </div>
+                </div>
+
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Black Panther: Wakada Forever</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Action/Adventure</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>9</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>120 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right playbtn">
+                            <i class="fa-solid fa-play" onclick="playmovie2()"></i>
+                        </div>
+                    </div>
+                    <img src="black.jpg" alt="Black Panther: Wakada Forever">
+
+                    <div class="MovieFrame" id="video2">
+                        <span class="closeMoviebtn" id="closemovie2" onclick="closeMovie2()">&times;</span>
+                        <video src="#" controls></video>
+                        <h3>Black Pantehr</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Interceptor</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Action/Adventure</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>7.1</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>120 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play" onclick="playmovie3()"></i>
+                        </div>
+                    </div>
+                    <img src="inter.jpg" alt="Interceptor">
+                    <div class="MovieFrame" id="video3">
+                        <span class="closeMoviebtn" id="closemovie3" onclick="closeMovie3()">&times;</span>
+                        <video src="Heat_Waves_-_Glass_animals_x_HighCloud_Cover_(Full_Version)(480p).mp4"
+                            controls></video>
+                        <h3>Interceptor</h3>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Thor: Love and Thunder</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Action/Adventure</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>8.1</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>120 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play" onclick="playmovie4()"></i>
+                        </div>
+                    </div>
+                    <img src="thor.jpg" alt="Thor: Love and Thunder">
+                    <div class="MovieFrame" id="video4">
+                        <span class="closeMoviebtn" id="closemovie4" onclick="closeMovie4()">&times;</span>
+                        <video
+                            src="Dekhne_Walon_Ne___Cover___Old_Song_New_Version_Hindi___Romantic_Love_Songs___Hindi_Song___Ashwani(720p).mp4"
+                            controls></video>
+                        <h3>Thor: Love and Thunder</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Black Adam</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Action/Adventure</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>9</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>120 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play" onclick="playmovie5()"></i>
+                        </div>
+                    </div>
+                    <img src="blackadam.jpg" alt="Black Adam">
+                    <div class="MovieFrame" id="video5">
+                        <span class="closeMoviebtn" id="closemovie5" onclick="closeMovie5()">&times;</span>
+                        <video src="Heat_Waves_-_Glass_animals_x_HighCloud_Cover_(Full_Version)(480p).mp4"
+                            controls></video>
+                        <h3>Black Adam</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="upcoming" id="upcoming">
+
+        <div class="movies_box">
+
+            <h1>Upcoming Movies </h1>
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">The SpongeBob</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2025</p>
+                            </div>
+                            <p class="category">Animation/Funny</p>
+
+
+                            <div class="info">
+
+
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>114 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="sponge.jpg" alt="The Sponge Bob">
+                </div>
+
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Elio</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2025</p>
+                            </div>
+                            <p class="category">Animation/Funny</p>
+
+
+                            <div class="info">
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>140 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="elio.jpg" alt="Elio">
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Superman</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2025</p>
+                            </div>
+                            <p class="category">Action/Adventures</p>
+
+
+                            <div class="info">
+
+
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>150 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="SuperMan.jpg" alt="Superman">
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Avatar 3</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2025</p>
+                            </div>
+                            <p class="category">Adventures/Plot</p>
+
+
+                            <div class="info">
+
+
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>200 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="avatar.webp" alt="Avatar 3">
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Ballerina</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2025</p>
+                            </div>
+                            <p class="category">Action/Suspense</p>
+
+
+                            <div class="info">
+
+
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>114 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="ballerina.jpg" alt="Ballerina">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="show" id="tvShows">
+
+        <div class="tv_show">
+
+            <h1>World Best TV Show</h1>
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Money Heist</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Thriller/Game</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>8.2</p>
+                                </div>
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>114 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="money_heist.jpg" alt="Money Heist">
+                </div>
+
+                <div class="card">
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">1899</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2016</p>
+                            </div>
+                            <p class="category">Mystery</p>
+
+
+                            <div class="info">
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>8.6</p>
+
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>160 minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <img src="1899.jpg" alt="1899">
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Game Of Throne</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2020</p>
+                            </div>
+                            <p class="category">Adventures/Plot</p>
+
+
+                            <div class="info">
+
+
+
+                                <div class="time">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>180 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <img src="game_of_thrones.jpg" alt="Game of Thrones">
+                </div>
+
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Arrow</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2012</p>
+                            </div>
+                            <p class="category">Action/Suspense</p>
+
+
+                            <div class="info">
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>6.7</p>
+
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>114 minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <img src="arrow.jpg" alt="Arrow">
+                    </div>
+                </div>
+                
+                <div class="card">
+
+                    <div class="details">
+
+                        <div class="left">
+
+                            <p class="name">Wednesday</p>
+
+                            <div class="date_quality">
+                                <p class="quality">HD</p>
+                                <p class="date">2022</p>
+                            </div>
+                            <p class="category">Action/Power</p>
+
+
+                            <div class="info">
+
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>8</p>
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>140 minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <img src="wednesday.jpg" alt="Wednesday">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter">
+
+        <h1>Newsletter</h1>
+
+        <div class="news_card">
+
+            <input type="email" name="" id="" placeholder="Enter your Email">
+            <button type="submit">Subscribe</button>
+        </div>
+
+    </div>
+
+    <p class="end">Design By<span><i class="fa-solid fa-face-grin-tongue-wink"></i>Prensha
+            Maharjan</span></p>
+    <p class="gototopbtn"> <a href="#top">Go to top</a></p>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
