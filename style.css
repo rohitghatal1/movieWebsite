@@ -868,43 +868,190 @@ section {
   color: black;
 }
 
-p.end {
-  border-top: 1px solid #fff;
-  background: #171717;
-  text-align: center;
-  color: #cccccc;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-p.end span {
-  color: #ffe100;
-
-}
-
-p.end span i {
-  margin: 0 8px;
-  ;
-}
-
-.gototopbtn {
-  background-color: #171717;
-  text-align: center;
-  padding: 1rem;
-
-}
-
-.gototopbtn a {
-  text-decoration: none;
-  background-color: #171717;
-  padding: 0.5rem;
+#contact {
+  padding: 50px 0;
+  background-color: paleturquoise;
   color: #fff;
-  font-size: 1.5rem;
-  border: 1px solid #fff;
-  transition: all 0.8s ease;
+  border-top: 1px solid black;
 }
 
-a:hover {
+#contact h2{
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  width: 100%;
+}
+.contactContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.sendMessage{
+  margin-left: 2rem;
+  width: 55%;
+  background-color: #171717;
+  color: #fff;
+  padding: 1rem;
+}
+
+ .getInTouch {
+  width: 45%;
+  background-color: #171717;
+  color: #fff;
+  padding: 1rem;
+}
+
+.sendMessage h2, .getInTouch h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff !important;
+}
+
+.sendMessage form .formGroup {
+  margin-bottom: 15px;
+}
+
+.sendMessage form .formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sendMessage form .formGroup input, .sendMessage form .formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #171717;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sendMessage form .formGroup textarea {
+  height: 150px;
+  resize: none;
+}
+
+.sendMessage form button {
+  padding: 10px 20px;
+  background-color: #171717;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sendMessage form button:hover {
   background-color: #fff;
-  color: #171717;
+  color: black;
+}
+
+.getInTouch p, .getInTouch ul {
+  margin-bottom: 15px;
+}
+
+.getInTouch .socialLinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.getInTouch .socialLinks li {
+  margin-bottom: 10px;
+}
+
+.getInTouch .socialLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.getInTouch .socialLinks li a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.getInTouch .contactNumber {
+  font-size: 14px;
+}
+
+footer {
+  background-color: #171717;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footerSection {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footerSection h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footerSection p, .footerSection ul {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin: 0.5rem 0;
+}
+
+.footerSection ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerSection ul li a:hover {
+  color: #ffe100;
+}
+
+.footerBottom {
+  margin-top: 1rem;
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+}
+
+.footerBottom p {
+  margin: 0.5rem 0;
+}
+
+.footerBottom .end {
+  font-size: 0.8rem;
+}
+
+.footerBottom .gototopbtn {
+  margin-top: 1rem;
+}
+
+.footerBottom .gototopbtn a {
+  color: #ffe100;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerBottom .gototopbtn i {
+  margin-right: 0.5rem;
 }
